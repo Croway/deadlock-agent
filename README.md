@@ -20,7 +20,7 @@ To use the Deadlock Agent, you need to attach it to the Java application you wan
 The following command demonstrates how to use the agent to simulate a lock within the `getSharedConnection` method of the `org.springframework.jms.listener.AbstractJmsListeningContainer` class in a Spring JMS application.
 
 ```bash
-java -javaagent:/Users/fmariani/Repositories/croway/deadlock-agent/target/deadlock-agent-1.0-SNAPSHOT.jar=org.springframework.jms.listener.AbstractJmsListeningContainer:getSharedConnection -jar target/acme-1.0-SNAPSHOT.jar
+java -javaagent:/path/to/deadlock-agent/target/deadlock-agent-1.0-SNAPSHOT.jar=org.springframework.jms.listener.AbstractJmsListeningContainer:getSharedConnection -jar target/acme-1.0-SNAPSHOT.jar
 ```
 
 **Command Breakdown:**
